@@ -19,3 +19,6 @@ jobs:
       # Use the output from the `deploy` step
       - name: Get the output hash
         run: echo "The hash was ${{ steps.deploy.outputs.hash }}"
+      - name: IPFS Pinata deploy GitHub action
+        uses: popovoleksandr/ipfs-pinata-deploy-action@v1.6.3
+            
